@@ -229,10 +229,10 @@ Test it afterwards.
 
 ## Step 13. Test Snort with a Malware PCAP
 
-1. Create a directory for testing:
+1. Create a directory for testing and go to it:
 
     ```bash
-    mkdir ~/test
+    mkdir ~/test ; cd ~/test
     ```
 
 2. Download a test malware PCAP file:
@@ -242,7 +242,13 @@ Test it afterwards.
    
     **Password:** `infected_20220223`
 
-3. Run Snort to test the PCAP file:
+   unzip it with
+   
+   ```bash
+   unzip 2022-02-23-traffic-analysis-exercise.pcap.zip
+   ```
+
+4. Run Snort to test the PCAP file:
 
     ```bash
     snort -c /usr/local/etc/snort/snort.lua --plugin-path /usr/local/etc/so_rules/ -r ~/test/2022-02-23-traffic-analysis-exercise.pcap -A alert_fast -q
