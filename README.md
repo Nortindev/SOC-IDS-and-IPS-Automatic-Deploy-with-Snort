@@ -254,7 +254,7 @@ Test it afterwards.
     snort -c /usr/local/etc/snort/snort.lua --plugin-path /usr/local/etc/so_rules/ -r ~/test/2022-02-23-traffic-analysis-exercise.pcap -A alert_fast -q > output.txt
     ```
 
-From here, you can use Snort to log out the file, or simply redirect it to another file, here we will redirect to the file output.txt, running the same command again:
+From here, you can use Snort to log out the file, or simply redirect it to another file, here we will redirect to the file output.txt:
 
 
 **Example Command to cut the information of the malicious PCAP** 
