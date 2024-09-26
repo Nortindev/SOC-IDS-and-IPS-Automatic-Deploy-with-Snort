@@ -26,7 +26,11 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     mkdir snort
     ```
 
-2. Install required libraries using the script provided.
+2. Install required libraries using the script provided on this github! This script will automatically install Snort and all its required libraries, and also change the necessary configuration file with your network device detail.
+
+    ```bash
+    curl -O https://raw.githubusercontent.com/Nortindev/SOC-IDS-and-IPS-Automatic-Deploy-with-Snort/refs/heads/main/snort_install.sh ; bash snort_install.sh
+    ```
 
 3. Verify that Snort is installed:
 
