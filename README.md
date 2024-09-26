@@ -33,6 +33,8 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     ```bash
     /usr/local/bin/snort -V
     ```
+    
+![Snort1](images/snort-1.jpeg)
 
 ## Step 4. Configure Snort Rules
 
@@ -98,6 +100,8 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     sudo snort -c /usr/local/etc/snort/snort.lua -R /usr/local/etc/rules/local.rules -i eth0 -A alert_fast
     ```
 
+    ![Snort2](images/snort-2.jpeg)
+
 3. Ping the server to generate alerts.
 
 ## Step 7. Persistent Rule Configuration
@@ -121,6 +125,8 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     include = "/usr/local/etc/rules/local.rules"
     ```
 
+![Snort3](images/snort-3.jpeg)
+    
 4. Save the file.
 
 ## Step 8. Test Without Specifying Rule Path
@@ -155,6 +161,11 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     - Comment out the `blocklist` section as it's not needed.
     - Uncomment `snort_path`.
     - Uncomment `local_rules` and remove the other rule paths.
+    - Get the Oink Code from the Snort website.
+  
+![Snortoink](images/snort-oink.jpeg)
+
+![Snort4](images/snort-4.jpeg)
 
 3. Save the configuration file.
 
@@ -179,6 +190,20 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     ```
 
 2. Make necessary modifications to fit your environment and save the file.
+
+![Snort5](images/snort-5.jpeg)
+
+Change the version, on mine, the most recent version is 31470, change accordingly.
+
+![Snort6](images/snort-6.jpeg)
+
+![Snort7](images/snort-7.jpeg)
+
+![Snort8](images/snort-8.jpeg)
+
+Test it afterwards.
+
+![Snort9](images/snort-9.jpeg)
 
 ## Step 11. Update Snort to Use PulledPork Rules
 
@@ -225,6 +250,8 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
 ```bash
 cat pcap-signatures.txt | cut -d "]" -f 3 | cut -d "[" -f 1 | cut -d "'" -f 2 | sort | uniq -c | sort
 ```
+
+![Snortfinal](images/snort-final.jpeg)
 
 ## Notes
 
