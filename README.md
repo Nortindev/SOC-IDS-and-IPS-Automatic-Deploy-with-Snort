@@ -260,7 +260,7 @@ From here, you can use Snort to log out the file, or simply redirect it to anoth
 **Example Command to cut the information of the malicious PCAP** 
 
 ```bash
-cat pcap-signatures.txt | cut -d "]" -f 3 | cut -d "[" -f 1 | cut -d "'" -f 2 | sort | uniq -c | sort
+cat output.txt | cut -d "]" -f 3 | cut -d "[" -f 1 | cut -d "'" -f 2 | sort | uniq -c | sort
 ```
 
 ![Snortfinal](images/snort-final.jpeg)
