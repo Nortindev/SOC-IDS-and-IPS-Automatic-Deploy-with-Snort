@@ -207,8 +207,10 @@ This project provides a step-by-step guide to install and configure Snort IDS/IP
     ```
 
 2. Download a test malware PCAP file:
-
-    [2022-02-23 Traffic Analysis Exercise PCAP](https://www.malware-traffic-analysis.net/2022/02/23/2022-02-23-traffic-analysis-exercise.pcap.zip)  
+   ```bash
+     wget https://www.malware-traffic-analysis.net/2022/02/23/2022-02-23-traffic-analysis-exercise.pcap.zip
+   ```
+   
     **Password:** `infected_20220223`
 
 3. Run Snort to test the PCAP file:
